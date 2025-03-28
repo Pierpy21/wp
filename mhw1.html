@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>il sito online con aste settimanali</title>
+    <link rel="stylesheet" href="mhw1.css" />
+    <link rel="shortcut icon" href="https://cdn.catawiki.net/assets/shared-assets/ui/v2/icons/favicon-4def9970acc4196d1e619785999fe8586b680924d26b481adee2e2c95b68e1f2.ico">
+
+</head>
+
+<body class="c-body">
+    <header class="c-header">
+        <div class="c-topbar">
+            <div class="c-header_wrapper u-flex">
+                <div class="c-icon">
+                    <a href="catawiki.html" class="c-logolink u-flex">
+                        <div class="c-logoimage u-flex c-colorblue"></div>
+                    </a>
+                </div>
+                <div class="c-categories u-flex">
+                    <div class="c-arrowimage u-flex">
+                        <a href="" class="c-categorieslink">Categorie</a>
+                    </div>
+                </div>
+                <div class="c-headermobile">
+                    <button class="c-buttonmobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" role="img" aria-hidden="true" class="c-colorblue">
+                            <path fill="currentColor" fill-rule="evenodd" d="m17.9 16.5 5.1 5.1.7.7-1.4 1.4-.7-.7-5.1-5.1a9.7 9.7 0 0 1-6 2.1A9.6 9.6 0 0 1 1 10.5 9.6 9.6 0 0 1 10.5 1a9.6 9.6 0 0 1 9.5 9.5 9.7 9.7 0 0 1-2.1 6M10.5 3A7.6 7.6 0 0 0 3 10.5a7.6 7.6 0 0 0 7.5 7.5 7.6 7.6 0 0 0 7.5-7.5A7.6 7.6 0 0 0 10.5 3" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <button class="c-buttonmobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="c-colorblue">
+                            <path fill="#03F" d="M18.4 1.1a6.7 6.7 0 0 0-6.3 2h-.2a6.7 6.7 0 0 0-6.3-2A6.9 6.9 0 0 0 .1 7 7.1 7.1 0 0 0 2 13l10 10 10-10a7.1 7.1 0 0 0 1.9-6 6.9 6.9 0 0 0-5.5-5.9m2.1 10.4L12 20l-8.6-8.4a4.9 4.9 0 0 1-1.3-4.4 5 5 0 0 1 3.8-4.1 4.9 4.9 0 0 1 5.3 2.2 1 1 0 0 0 1.6 0 5.1 5.1 0 0 1 5.3-2.2 4.9 4.9 0 0 1 3.8 4 4.8 4.8 0 0 1-1.4 4.4"></path>
+                        </svg>
+                    </button>
+                    <button class="c-buttonmobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" class="c-colorblue">
+                            <path fill="currentColor" d="M24 20c0-4-5-7-12-7S0 16 0 20v3h24zM2 21v-1c0-2 4-5 10-5s10 3 10 5v1zM12 1a5.5 5.5 0 1 0 0 11 5.5 5.5 0 1 0 0-11m0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="c-searchbar u-flex">
+                    <div class="c-searchbox u-flex">
+                        <div class="c-buttoncontainer">
+                            <button class="c-search-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="c-searchicon c-colorblue">
+                                    <path fill="currentColor" fill-rule="evenodd" d="m17.9 16.5 5.1 5.1.7.7-1.4 1.4-.7-.7-5.1-5.1a9.7 9.7 0 0 1-6 2.1A9.6 9.6 0 0 1 1 10.5 9.6 9.6 0 0 1 10.5 1a9.6 9.6 0 0 1 9.5 9.5 9.7 9.7 0 0 1-2.1 6M10.5 3A7.6 7.6 0 0 0 3 10.5a7.6 7.6 0 0 0 7.5 7.5 7.6 7.6 0 0 0 7.5-7.5A7.6 7.6 0 0 0 10.5 3" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="c-inputcontainer">
+                            <input type="search" placeholder="Cerca per marchio, modello, artista..." autocomplete="off" autocapitalize="off" aria-expanded="false"
+                            aria-haspopup="listbox" role="combobox" class="c-inputbox">
+                        </div>
+                    </div>
+                </div>
+                <nav class="c-navcontainer u-flex">
+                    <div class="c-sellcontainer u-flex">
+                        <a class="c-headerbutton c-text-button c-no-underline" href="//www.catawiki.com/it/seller/lot">Vendi</a>
+                    </div>
+                    <div class="c-helpcontainer u-flex">
+                        <a class="c-headerbutton c-text-button c-no-underline" href="//www.catawiki.com/it/help">Aiuto</a>
+                    </div>
+                    <div class="c-favouritecontainer u-flex">
+                        <a aria-label="Preferiti" href="//www.catawiki.com/it/veiling/favorites" class="c-favouritelink u-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="u-svg">
+                                <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                           </svg>
+                        </a>
+                    </div>
+                    <div class="c-logincontainer">
+                        <button class="c-loginbutton c-text-button u-flex">Accedi</button>
+                    </div>
+                </nav>
+                <div class="c-mobilenav"></div>
+            </div>
+        </div>
+    </header>
+    <div class="c-slidercontainer u-flex">
+        <ul role="tablist" class="c-slider u-flex">
+            <div class="c-litabactive u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="c-activeicon"><path fill="currentColor" d="M1.5 22h12v2h-12zm0-8.272 1.414-1.414 6.364 6.364-1.414 1.414z"></path><path fill="currentColor" fill-rule="evenodd" d="M12.106 5.95 6.45 11.607l3.535 3.535 5.657-5.657zm-8.485 5.657 6.364 6.364 8.485-8.486-6.364-6.364z" clip-rule="evenodd"></path><path fill="currentColor" d="M12.815 2.414 14.229 1l6.364 6.364-1.415 1.414zm.353 12.375 2.121-2.122 8.193 8.193-2.121 2.122z"></path></svg>
+                        <span class="c-text-button c-colorblue">Questa settimana</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="foryouicon"></span>
+                        <span class="c-text-button c-colordeepgray">Per te</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="trendicon"></span>
+                        <span class="c-text-button c-colordeepgray">Di tendenza</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="articon"></span>
+                        <span class="c-text-button c-colordeepgray">Arte</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="furnitureicon"></span>
+                        <span class="c-text-button c-colordeepgray">Interni</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="diamondicon"></span>
+                        <span class="c-text-button c-colordeepgray">Gioielli</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="watchicon"></span>
+                        <span class="c-text-button c-colordeepgray">Orologi da polso</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="bagicon"></span>
+                        <span class="c-text-button c-colordeepgray">Moda</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="stampicon"></span>
+                        <span class="c-text-button c-colordeepgray">Monete e francobolli</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="comicsicon"></span>
+                        <span class="c-text-button c-colordeepgray">Fumetti</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="caricon"></span>
+                        <span class="c-text-button c-colordeepgray">Auto e moto</span>
+                    </button>
+                </li>
+            </div>
+            <div class="c-litab u-flex">
+                <li class="c-liwrap">
+                    <button class="c-buttonslider">
+                        <span class="c-liicon" id="wineicon"></span>
+                        <span class="c-text-button c-colordeepgray">Vino e liquori </span>
+                    </button>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <div class="c-container">
+        <div class="c-banner">
+            <a href="catawiki.html" class="c-bannertitle">
+                <h1 class="c-firstbannertitle c-no-underline" style="color: black;">
+                    <span class="c-maintitle c-no-underline" style="color: rgb(0, 51, 255);">Oggetti speciali,</span>
+                    selezionati da esperti
+                </h1>
+            </a>
+            <div class="c-imageswrapper">
+                <div class="c-greenoverlay">
+                    <img class="c-topleftimage" src="topleft.jpg">
+                </div>
+                <a class="c-rightimage" href="https://www.catawiki.com/it/e">
+                    <div class="c-textoverlay">
+                        <p class="c-name">Céline Lahlou</p>
+                        <p class="c-script">Esperta di Arte moderna e contemporanea</p>
+                    </div>
+                </a>
+                <a href="" class="c-bottomleftimage"></a>
+            </div>
+            <div class="c-buttonswrapper u-flex">
+                <button id="buttonactive" class="c-buttoncarousel"></button>
+                <button class="c-buttoncarousel"></button>
+                <button class="c-buttoncarousel"></button>
+                <button class="c-buttoncarousel"></button>
+                <button class="c-buttoncarousel"></button>
+                <button class="c-buttoncarousel"></button>
+                <button class="c-arrowbutton u-flex">
+                    <span id="buttonarrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#03f" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                    </span>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    <div id="productsbanner" class="c-container">
+        <div class="c-product">
+            <a href="" class="c-no-underline">
+                
+                <div id="dogimage" class="c-productimage">
+                    <button class="c-favouritebutton u-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg" class="u-flex">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </div>
+                <p class="c-actualoffer">Offerta attuale</p>
+                <div class="c-price" data-testid="hero-banner-object-price">4.000 €</div>
+            </a>
+        </div>
+        <div class="c-product">
+            <a class="c-no-underline" href="">
+                <div id="dishesimage" class="c-productimage">
+                    <button class="c-favouritebutton u-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </div>
+                <p class="c-actualoffer">Offerta attuale</p>
+                <div class="c-price" data-testid="hero-banner-object-price">1450 €</div>
+            </a>
+        </div>
+        <div class="c-product">
+            <a class="c-no-underline" href="">
+                <div id="pokemonimage" class="c-productimage">
+                    <button class="c-favouritebutton u-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </div>
+                <p class="c-actualoffer">Offerta attuale</p>
+                <div class="c-price" data-testid="hero-banner-object-price">1450 €</div>
+            </a>
+        </div>
+        <div class="c-product">
+            <a class="c-no-underline" href="">
+                <div id="wineimage" class="c-productimage">
+                    <button class="c-favouritebutton u-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </div>
+                <p class="c-actualoffer">Offerta attuale</p>
+                <div class="c-price" data-testid="hero-banner-object-price">1.000 €</div>
+            </a>
+        </div>
+    </div>
+    <div id="dailyselection" class="c-container">
+        <div class="c-dailywrapper u-flex">
+            <div class="c-dailytext u-flex">
+                <h5 class="u-h5 c-textmargin">La tua selezione quotidiana</h5>
+                <span class="u-h6">Scelte personalizzate per aiutarti a trovare il tuo prossimo tesoro. Aggiornata quotidianamente.</span>
+                <a href="" class="c-findtreasure c-no-underline">
+                    <span class="c-buttontext">Trova il tuo prossimo tesoro</span>
+                </a>
+            </div>
+            <div class="c-discoverygrid">
+                <a id="statueimage" class="c-gridimage u-flex" href="">
+                    <button class="c-favouritebutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </a>
+                <a id="chessimage" class="c-gridimage u-flex" href="">
+                    <button class="c-favouritebutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </a>
+                <a id="sculptureimage" class="c-gridimage u-flex" href="">
+                    <button class="c-favouritebutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </a>
+                <a id="paintimage" class="c-gridimage u-flex" href="">
+                    <button class="c-favouritebutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </a>
+                <a id="paintimage2" class="c-gridimage u-flex" href="">
+                    <button class="c-favouritebutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </a>
+                <a id="photosimage" class="c-gridimage u-flex" href="">
+                    <button class="c-favouritebutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </a>
+                <a id="stampimage" class="c-gridimage u-flex" href="">
+                    <button class="c-favouritebutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </a>
+                <a id="lensimage" class="c-gridimage u-flex" href="">
+                    <button class="c-favouritebutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </a>
+                <a id="charmimage" class="c-gridimag u-flex" href="">
+                    <button class="c-favouritebutton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="heartsvg">
+                            <path fill="#03F" d="M18.4 1.1c-2.306-.488-4.698.272-6.3 2h-.2c-1.602-1.728-3.994-2.488-6.3-2C2.688 1.679.473 4.055.1 7c-.336 2.187.366 4.405 1.9 6l10 10 10-10c1.534-1.595 2.236-3.813 1.9-6-.373-2.945-2.588-5.321-5.5-5.9zm2.1 10.4L12 20l-8.6-8.4c-1.136-1.16-1.622-2.809-1.3-4.4.313-2.013 1.816-3.635 3.8-4.1 2.056-.486 4.192.4 5.3 2.2.189.252.485.4.8.4.315 0 .611-.148.8-.4 1.147-1.752 3.25-2.624 5.3-2.2 1.968.426 3.476 2.012 3.8 4 .316 1.61-.212 3.269-1.4 4.4z"></path>
+                       </svg>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="c-container">
+        <h2 id="marchiiconici" class="u-h6">Marchi iconici</h2>
+        <div class="c-brandgrid">
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/marklin-2593dcf6edb8d96a30308f3fa1af9fe81d928d6f019a4d433f956f9bb465b9eb.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/cartier-8ca4c889bfc5965a681ceb7c7024a273cf8fe9d446dd1cbe99a4b625d12953bc.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/christofle-0fe5a73bdadbf0d18e9877ff2e8d9622935667a6e826261cf6274e71e08a53c4.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/rolex-12e85c1f34747af8addb71e36baeac7d645da5023f01e9ef8af78ba64bfcaa03.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/nikon-fbb70ff68deb202638ffd066d570a9d576d94a5fc471bdff3b12da0996c32da1.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/pokemon-c7b089af8c519d14679704a5c5eca5eaf1add52b3b120851ecf404c7a2ea3dba.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/omega-d771cb8b5dd47dfeeebe768801ebdb8249f1854c0805fd65537e748265ff50d2.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/hermes-ad9ad5f709220dcf311cef39ce1d767b336d64c2afd81320719a205e31e847b7.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/porsche-5888a38b3104a81fcb8d3b69b576dc37791b9a0f5d690df6fe3d0839ca80fc95.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/macallan-d2c9c3856f3ee72f92f77bf6f84d0418099c228ba99cbf8852712fe0c3bc4df6.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/louis-vuitton-672c8093a953319252ac1e04b103b2390aac5f522f5f8bcd7763281cc2caf59a.svg">
+            </a>
+            <a class="c-brand u-flex" href="">
+                <img class="c-brandimage" src="https://cdn.catawiki.net/assets/buyer/ui/v2/logos/brands/lego-b9a2e4c7811bcbcc6eb8cfbcb9c2d2c9944b5f493e234893f0bb932c7b5e4ad5.svg">
+            </a>
+        </div>
+    </div>
+    <div class="c-container">
+        <div class="c-expertstitle">
+            <span>Fai offerte per oltre </span>
+            <span class="c-colorblue">75.000 oggetti speciali</span>
+            <span> ogni settimana, selezionati da</span>
+            <a href="/it/e" class="c-colorblue c-no-underline"> centinaia di esperti.</a>
+        </div>
+        <ul class="c-scrollableexperts u-flex">
+            <li id="nopaddingleft" class="c-expert">
+                <a class="c-expertcard c-no-underline" href="">
+                    <img class="c-expertimage" src="https://images.ctfassets.net/63zu1jme7dht/2vFbanBO6h0l1uYtgdO3bQ/e08776a05e4590772541ef244527085a/499.jpg">
+                    <div class="c-expertcard-name">Davide Marelli</div>
+                    <div class="c-expertcard-expertwise">Esperto di Moto e scooter d'epoca</div>
+                </a>
+            </li>
+            <li class="c-expert">
+                <a class="c-expertcard c-no-underline" href="">
+                    <img class="c-expertimage" src="https://images.ctfassets.net/63zu1jme7dht/6mpEC0bdIu01YSMKdMlk31/1b2a457277af9af8760bf375634a5765/683.jpg">
+                    <div class="c-expertcard-name">Annick van Itallie</div>
+                    <div class="c-expertcard-expertwise">Esperta di Antiquariato</div>
+                </a>
+            </li>
+            <li class="c-expert">
+                <a class="c-expertcard c-no-underline" href="">
+                    <img class="c-expertimage" src="https://images.ctfassets.net/63zu1jme7dht/6GqnNK4FbgjfcZ9iQNx0Q3/2279019ca5311da3c57da7eb0ab6f322/783.jpg">
+                    <div class="c-expertcard-name">Caterina Maffeis</div>
+                    <div class="c-expertcard-expertwise">Esperta di Arte classica</div>
+                </a>
+            </li>
+            <li class="c-expert">
+                <a class="c-expertcard c-no-underline" href="">
+                    <img class="c-expertimage" src="https://images.ctfassets.net/63zu1jme7dht/6YEc4ceo4Z1ahcrjdlRWr2/fbb801bae140fd218ec7d9bf3f3b8c58/main_image_1293.png">
+                    <div class="c-expertcard-name">Ariana Helling</div>
+                    <div class="c-expertcard-expertwise">Esperta di Gioielli</div>
+                </a>
+            </li>
+            <li class="c-expert">
+                <a class="c-expertcard c-no-underline" href="">
+                    <img class="c-expertimage" src="https://images.ctfassets.net/63zu1jme7dht/2ACeeQzLcldEjAU4sGHfD1/acaadb8fd885732c01fe77708925b8df/931.jpg">
+                    <div class="c-expertcard-name">Daniel Becker</div>
+                    <div class="c-expertcard-expertwise">Esperto di Carte collezionabili</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="c-container">
+        <div class="c-whytitle">Perché
+            <span class="c-colorblue">Catawiki</span>
+            ?
+        </div>
+        <ul class="c-trustelementstab u-flex">
+            <li class="c-trustelement">
+                <a class="c-colorblue" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="currentColor" fill-rule="evenodd" d="M19 12H5v9h14zM3 10v13h18V10z" clip-rule="evenodd"></path>
+                        <path fill="currentColor" fill-rule="evenodd" d="M21 8H3v2h18zM1 6v6h22V6z" clip-rule="evenodd"></path>
+                        <path fill="currentColor" d="M11 0h2v4h-2zm0 10h2v11h-2zM4.243 2.828 1.414 0 0 1.414l2.828 2.829zm15.507.002L22.58.002l1.414 1.414-2.828 2.828z"></path></svg>
+                </a>
+                <div class="u-h4 u-flex">Trova il tuo oggetto speciale
+                    <svg class="c-colorblue c-arrow u-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" role="img" class="u-color-primary u-m-l-xs"><path fill="currentColor" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                </div>
+                <div class="u-h7">Scopri oggetti unici che non potrai trovare altrove.</div>
+            </li>
+            <li class="c-trustelement">
+                <a class="c-colorblue c-no-underline" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 28 28" role="img">
+                        <path stroke="currentColor" stroke-width="2" d="M7 11.59 10.262 15 16 9M17.286 17.286l6.71 6.71"></path>
+                        <circle cx="12.07" cy="12.07" r="8.07" stroke="currentColor" stroke-width="2"></circle>
+                    </svg>
+                </a>
+                <div class="u-h4 u-flex">Selezionati da esperti
+                    <svg class="c-colorblue c-arrow u-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" role="img" class="u-color-primary u-m-l-xs"><path fill="currentColor" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                </div>
+                <div class="u-h7">I nostri esperti esaminano e valutano ogni oggetto.</div>
+            </li>
+            <li class="c-trustelement">
+                <a class="c-colorblue c-no-underline" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 28 28" role="img">
+                        <path fill="currentColor" fill-rule="evenodd" d="M14 4.073 5 6.528V11c0 3.906 2.129 10.568 9 12.903 6.871-2.335 9-8.997 9-12.903V6.528zM25 5 14 2 3 5v6c0 4.5 2.5 12.5 11 15 8.5-2.5 11-10.5 11-15z" clip-rule="evenodd"></path>
+                        <path fill="currentColor" fill-rule="evenodd" d="M14.707 17H16v-7h-1.293C12.568 10.025 11 11.666 11 13.5s1.569 3.475 3.707 3.5m-.01 2C11.54 18.97 9 16.516 9 13.5s2.541-5.47 5.697-5.5H18v11z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <div class="u-h4 u-flex">Tutela degli acquirenti
+                    <svg class="c-colorblue c-arrow u-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" role="img" class="u-color-primary u-m-l-xs"><path fill="currentColor" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                </div>
+                <div class="u-h7">Ci assicuriamo che i tuoi pagamenti siano al sicuro e che i venditori siano verificati</div>
+            </li>
+            <li class="c-trustelement">
+                <a class="c-colorblue c-no-underline" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 28 28" role="img">
+                        <circle cx="14" cy="7" r="4" stroke="currentColor" stroke-width="2"></circle>
+                        <path fill="currentColor" d="M14 15c-5.265 0-9.31 3.186-9.92 7H13l1.835 2H2v-1c0-5.701 5.57-10 12-10 3.64 0 6.944 1.351 9.164 3.537L21.8 18c-1.814-1.806-4.612-3-7.799-3"></path>
+                        <path stroke="currentColor" stroke-width="2" d="M15 20.453 19.35 25 27 17"></path>
+                    </svg>
+                </a>
+                <div class="u-h4 u-flex">Scelto da milioni di persone
+                    <svg class="c-colorblue c-arrow u-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" role="img" class="u-color-primary u-m-l-xs"><path fill="currentColor" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
+                </div>
+                <div class="u-h7">Entra a far parte di una comunità mondiale di venditori e acquirenti soddisfatti.</div>
+            </li>
+        </ul>
+    </div>
+    <footer class="c-footer">
+        <div class="c-authentication c-container u-flex">
+            <button id="loginbuttonfoot" class="c-buttonfoot c-loginbutton">
+                <span class="c-text-button c-marginbutton">Accedi</span>
+            </button>
+            <button id="loginbuttonfoot" class="c-buttonfoot c-loginbutton c-text-button">
+                <span class="c-text-button c-marginbutton">Registrati</span>
+            </button>
+            <div id="footertext" class="u-h7">Fai offerte su oltre 65,000 oggetti speciali ogni settimana, selezionati da oltre 240 esperti</div>
+        </div>
+        <section class="c-footermain">
+            <div id="footergap" class="c-container u-flex">
+                <div class="u-flex1">
+                    <h6 class="u-h2">Informazioni su Catawiki</h6>
+                    <ul class="u-h7 c-paddingleft">
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Informazioni su Catawiki</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">I nostri esperti</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Lavora con noi</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Stampa</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Collaborare con Catawiki</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-flex1">
+                    <h6 class="u-h2">Acquista</h6>
+                    <ul class="u-h7 c-paddingleft">
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Come acquistare</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Tutela degli acquirenti</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Catawiki Stroies</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Termini di utilizzo per gli acquirenti</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-flex1">
+                    <h6 class="u-h2">Vendi</h6>
+                    <ul class="u-h7 c-paddingleft">
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Come vendere</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Consigli per venditori</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Linee guida per categoria</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Termini di utilizzo per venditori</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Programma di affiliazione</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-flex1">
+                    <h6 class="u-h2">Il mio Catawiki</h6>
+                    <ul class="u-h7 c-paddingleft">
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Accedi</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Registrati</a>
+                        </li>
+                        <li class="c-lifoot">
+                            <a href="/it/help/about" class="c-afoot c-no-underline">Centro assistenza</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="social" class="c-container u-flex">
+                <div class="c-languagebutton u-flex">
+                    <input class="c-text-field" type="text" value="Italiano">
+                    <button title="Aprire" type="button" class="c-footerlang">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="c-buttonicon" viewBox="0 0 24 24" role="img" aria-hidden="true">
+                            <path fill="currentcolor" fill-rule="evenodd" d="M7.41 8.59 6 10l6 6 6-6-1.41-1.41L12 13.17z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="u-flex">
+                    <div class="c-socialcontainer u-flex">
+                        <a href="" id="socialicon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" role="img" aria-hidden="true">
+                                <path fill="currentColor" d="M23.998 12.073C23.998 5.405 18.626 0 12 0 5.372 0 0 5.405 0 12.073 0 18.1 4.388 23.094 10.124 24v-8.437H7.078v-3.49h3.046v-2.66c0-3.025 1.792-4.697 4.532-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.49 0-1.955.93-1.955 1.886v2.264h3.328l-.532 3.49h-2.796V24c5.736-.906 10.124-5.9 10.124-11.927Z"></path>
+                            </svg>
+                        </a>
+                        <a href="" id="socialicon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true">
+                                <path fill="currentColor" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63a5.9 5.9 0 0 0-2.126 1.384A5.86 5.86 0 0 0 .63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.9 5.9 0 0 0 1.384 2.126A5.9 5.9 0 0 0 4.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.9 5.9 0 0 0 2.126-1.384 5.9 5.9 0 0 0 1.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.9 5.9 0 0 0-1.384-2.126A5.85 5.85 0 0 0 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0m0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.8 3.8 0 0 1-.899 1.382 3.74 3.74 0 0 1-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07s-3.586-.015-4.859-.074c-1.171-.061-1.816-.256-2.236-.421a3.7 3.7 0 0 1-1.379-.899 3.64 3.64 0 0 1-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844s.016-3.586.061-4.861c.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324M12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4m7.846-10.405a1.441 1.441 0 0 1-2.88 0 1.44 1.44 0 0 1 2.88 0"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <img class="c-littlecatalogo" alt="Catawiki" src="https://cdn.catawiki.net/assets/shared-assets/ui/v2/webpack/media/logo.e46d921b67826ee96ba8..svg">
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
